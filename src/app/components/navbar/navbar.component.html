@@ -1,0 +1,10 @@
+<div class="container">
+  <div>Navigation</div>
+  <div class="nav-buttons">
+    <!--  -->
+    <button *ngIf="!isAuthSessionActive()" (click)="authenticate()">
+      Login
+    </button>
+    <button *ngIf="isAuthSessionActive()" (click)="logout()">Logout</button>
+  </div>
+</div>

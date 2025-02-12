@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  height: 100vh;
+  margin: 0px;
+}
+
+app-root {
+  background-color: antiquewhite;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 5% 90% 5%;
+  gap: 0px;
+}
