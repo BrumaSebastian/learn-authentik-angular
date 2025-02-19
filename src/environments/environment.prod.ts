@@ -1,10 +1,9 @@
 export const environment = {
-  authUri: '',
-  tokenUri: '',
+  authUri: 'http://localhost:9000/application/o/authorize/',
+  tokenUri: 'http://localhost:9000/application/o/token/',
+  logoutUri:
+    'http://localhost:9000/application/o/dev-authentik-app/end-session/',
   clientId: '',
   clientSecret: '',
   redirectUri: '',
-  // responseType: 'code',
-  // scope: 'openid profile',
-  // state: 'random_string_for_csrf',
 };
