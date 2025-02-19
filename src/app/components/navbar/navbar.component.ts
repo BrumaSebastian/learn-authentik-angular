@@ -1,5 +1,5 @@
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
-import { AuthServiceModule } from '../../services/auth-service/auth-service.module';
+import { AuthService } from '../../services/auth-service/auth-service.module';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 
 @Component({
@@ -11,7 +11,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 })
 export class NavbarComponent {
   constructor(
-    private authService: AuthServiceModule,
+    private authService: AuthService,
     @Inject(PLATFORM_ID) private platformId: Object
   ) {}
 
